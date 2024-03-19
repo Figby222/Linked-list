@@ -32,6 +32,6 @@ LinkedList.prototype.getTail = function(node = this._linkedList) {
     return this.getTail(node.nextNode);
 }
 
-LinkedList.prototype.getList = function() { return this._linkedList };
+LinkedList.prototype.getHead = function() { return this._linkedList };
 
 export default LinkedList;
