@@ -7,8 +7,7 @@ const LinkedList = function() {
 
 LinkedList.prototype.append = function(value) {
     const node = new Node(value);
-
-    if (!Object.values(this._linkedList)) {
+    if (!Object.values(this._linkedList).length) {
         this._linkedList = node;
         return;
     }
@@ -20,11 +19,11 @@ LinkedList.prototype.append = function(value) {
 }
 
 LinkedList.prototype.getTail = function(node) {
-    if (node.nextNode === null) {
+    if (node.getNextNode() === null) {
         return node;
     }
 
-    return this.tail(node.nextNode);
+    return this.tail(node.getNextNode());
 }
 
 LinkedList.prototype.getList = function() { return this._linkedList };
