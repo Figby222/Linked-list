@@ -128,4 +128,19 @@ LinkedList.prototype.insertAt = function(value, index) {
     }
 }
 
+LinkedList.prototype.removeAt = function(index) {
+    let currentNode = this._linkedList;
+    let currentIndex = 0;
+
+    while(currentNode) {
+        if (currentIndex = index - 1) {
+            currentNode.nextNode = currentNode.nextNode.nextNode;
+            return;
+        }
+
+        currentNode = currentNode.nextNode;
+        currentIndex++;
+    }
+}
+
 export default LinkedList;
