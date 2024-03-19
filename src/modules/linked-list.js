@@ -45,4 +45,15 @@ LinkedList.prototype.size = function() {
     return currentIndex + 1;
 }
 
+LinkedList.prototype.at = function(index) {
+    let currentIndex = 0;
+    let currentNode = this._linkedList;
+    while(currentIndex !== index) {
+        currentNode = currentNode.nextNode;
+        currentIndex++;
+    }
+
+    return currentNode.value;
+}
+
 export default LinkedList;

@@ -7,3 +7,4 @@ myList.append(242);
 myList.prepend(24242424);
 console.log(myList.getHead());
 console.log(myList.size());
+console.log(myList.at(1))
