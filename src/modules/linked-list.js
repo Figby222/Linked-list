@@ -18,6 +18,12 @@ LinkedList.prototype.append = function(value) {
 
 }
 
+LinkedList.prototype.prepend = function(value) {
+    const node = new Node(value);
+    node.nextNode = this._linkedList;
+    this._linkedList = node;
+}
+
 LinkedList.prototype.getTail = function(node = this._linkedList) {
     if (node.nextNode === null) {
         return node;
