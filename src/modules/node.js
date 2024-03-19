@@ -4,7 +4,7 @@ const Node = function(value, nextNode = null) {
 }
 
 Node.prototype.getValue = function() { return this.value };
-Node.prototype.getNode = function () { return this.nextNode };
+Node.prototype.getNextNode = function () { return this.nextNode };
 
 
 
