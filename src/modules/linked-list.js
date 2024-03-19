@@ -80,4 +80,19 @@ LinkedList.prototype.contains = function(value) {
     return false;
 }
 
+LinkedList.prototype.find = function(value) {
+    let currentNode = this._linkedList;
+    let currentIndex = 0;
+    while(currentNode) {
+        if (currentNode.value == value) {
+            return currentIndex;
+        }
+
+        currentNode = currentNode.nextNode;
+        currentIndex++;
+    }
+    
+    return null;
+}
+
 export default LinkedList;

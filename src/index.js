@@ -10,7 +10,8 @@ console.log(myList.getHead());
 console.log(myList.size());
 console.log(myList.at(1))
 console.log(myList.getHead());
-myList.pop();
+// myList.pop();
 console.log(myList.getHead());
 
 console.log(myList.contains(24));
+console.log(myList.find(24));
