@@ -2,9 +2,11 @@ import Node from './node.js';
 const LinkedList = function() {
     this._linkedList = {};
     
-    this.append = function(node) {
-        if (!Object.values(_linkedList)) {
-            _linkedList = node;
+    this.append = function(value) {
+        const node = new Node(value);
+
+        if (!Object.values(this._linkedList)) {
+            this._linkedList = node;
             return;
         }
 
