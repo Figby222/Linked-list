@@ -4,4 +4,5 @@ import LinkedList from './modules/linked-list.js';
 const myList = new LinkedList();
 myList.append(42);
 myList.append(242);
-console.log(myList.getList());
+myList.prepend(24242424);
+console.log(myList.getHead());
