@@ -34,4 +34,15 @@ LinkedList.prototype.getTail = function(node = this._linkedList) {
 
 LinkedList.prototype.getHead = function() { return this._linkedList };
 
+LinkedList.prototype.size = function() {
+    let currentIndex = 0;
+    let currentNode = this._linkedList;
+    while(currentNode.nextNode !== null) {
+        currentNode = currentNode.nextNode;
+        currentIndex++;
+    }
+
+    return currentIndex + 1;
+}
+
 export default LinkedList;
