@@ -111,4 +111,21 @@ LinkedList.prototype.toString = function() {
     return string;
 }
 
+LinkedList.prototype.insertAt = function(value, index) {
+    const node = new Node(value);
+    let currentNode = this._linkedList;
+    let currentIndex = 0;
+
+    while(currentNode) {
+        if (currentIndex == index - 1) {
+            node.nextNode = currentNode.nextNode;
+            currentNode.nextNode = node;
+            return;
+        }
+        
+        currentNode = currentNode.nextNode;
+        currentIndex++;
+    }
+}
+
 export default LinkedList;

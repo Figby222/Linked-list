@@ -16,3 +16,5 @@ console.log(myList.getHead());
 console.log(myList.contains(24));
 console.log(myList.find(24));
 console.log(myList.toString());
+myList.insertAt("hello", 2);
+console.log(myList.at(2));
