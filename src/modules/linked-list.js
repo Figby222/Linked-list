@@ -53,7 +53,7 @@ LinkedList.prototype.at = function(index) {
         currentIndex++;
     }
 
-    return currentNode.value;
+    return currentNode;
 }
 
 export default LinkedList;
