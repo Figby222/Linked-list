@@ -1,3 +1,4 @@
+import Node from './node.js';
 const LinkedList = function() {
     this._linkedList = {};
     
