@@ -23,6 +23,8 @@ const LinkedList = function() {
 
         return this.tail(node.nextNode);
     }
+
+    this.getList = () => this._linkedList;
 };
 
 export default LinkedList;
