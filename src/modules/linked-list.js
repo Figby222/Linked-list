@@ -56,4 +56,15 @@ LinkedList.prototype.at = function(index) {
     return currentNode;
 }
 
+LinkedList.prototype.pop = function() {
+    let currentNode = this._linkedList;
+    while (currentNode) {
+        if (currentNode.nextNode.nextNode == null) {
+            currentNode.nextNode = null;
+        }
+        
+        currentNode = currentNode.nextNode;
+    }
+}
+
 export default LinkedList;
