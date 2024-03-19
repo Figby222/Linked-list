@@ -95,4 +95,20 @@ LinkedList.prototype.find = function(value) {
     return null;
 }
 
+LinkedList.prototype.toString = function() {
+    let currentNode = this._linkedList;
+    let string = "";
+    
+    while(currentNode) {
+        string += `( ${currentNode.value} ) -> `;
+        if (currentNode.nextNode == null) {
+            string += null;
+        }
+        
+        currentNode = currentNode.nextNode;
+    }
+
+    return string;
+}
+
 export default LinkedList;

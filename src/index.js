@@ -15,3 +15,4 @@ console.log(myList.getHead());
 
 console.log(myList.contains(24));
 console.log(myList.find(24));
+console.log(myList.toString());
