@@ -67,4 +67,17 @@ LinkedList.prototype.pop = function() {
     }
 }
 
+LinkedList.prototype.contains = function(value) {
+    let currentNode = this._linkedList;
+    while(currentNode) {
+        if (currentNode.value == value) {
+            return true;
+        }
+
+        currentNode = currentNode.nextNode;
+    }
+
+    return false;
+}
+
 export default LinkedList;
